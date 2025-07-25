@@ -53,8 +53,7 @@ def load_csv(path):
             except (IndexError, ValueError):
                 continue
     return np.array(prices)
-
-
+  
 def setup_grid(lower, upper, grids, gtype):
     if gtype.startswith("geom"):
         return np.geomspace(lower, upper, grids + 1)
